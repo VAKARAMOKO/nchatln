@@ -29,12 +29,12 @@
     <div class="navbar-brand">
       <%= link_to root_path, class: "navbar-item" do %>
         <h1 class="title is-5">
-          <span style="color: ">C</span>
+          <span style="color: "blue>C</span>
           <span style="color: white">h</span>
           <span style="color: ">a</span>
-          <span style="color: ">t</span>
+          <span style="color: red">t</span>
           <span style="color: ">L</span>
-          <span style="color: ">n</span>
+          <span style="color: yellow">n</span>
         </h1>
       <% end %>
       <div class="navbar-burger burger" data-target="navbarExample">
@@ -52,6 +52,7 @@
               <% if user_signed_in? %>
               
                 <p class="control">
+                   <!-- remplacer emails par le nom ou profil/!-->
                   <%= link_to current_user.email, edit_user_registration_path, class: "button is-info" %>
                 </p>
                 
